@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container mx-auto py-10">
+        <div id="product-list" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+    </div>
+
+    <div id="orderModal" class="modal hidden">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <img class="closa-img" src="./images/close-logo.svg" alt="Close Img" width="40" height="40">
+            </button>
+            <img src="./images/true-icon.svg" alt="Success Icon" class="modal-icon">
+            <h2>Thank you for your order!</h2>
+            <p>Your order will be delivered soon.</p>
+        </div>
+    </div>
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
